@@ -7,7 +7,7 @@
         <div>
             <ul class="nav navbar-nav">
                 <li><a href="/admin/element/add">Element</a> </li>
-                <li><a href="/admin/vehicle">Vehicles</a> </li>
+                <li><a href="/admin/vehicle/add">Vehicles</a> </li>
                 <li><a href="/admin/training">Training</a> </li>
             </ul>
         </div>

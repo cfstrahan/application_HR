@@ -3,6 +3,7 @@ package com.astontech.hr.controllers;
 import com.astontech.hr.domain.Element;
 import com.astontech.hr.domain.ElementType;
 import com.astontech.hr.domain.VO.ElementVO;
+import com.astontech.hr.domain.VO.VehicleVO;
 import com.astontech.hr.services.ElementTypeService;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.apache.log4j.Logger;
@@ -37,6 +38,13 @@ public class AdminController {
         model.addAttribute("warningAlert", "visible");
         return "admin/element/element_add";
     }
+
+    @RequestMapping(value = "/admin/vehicle/add", method = RequestMethod.GET)
+    public String adminVehicleGet(Model model){
+        model.addAttribute("vehicleVO", new VehicleVO());
+        return "admin/vehicle/vehicle_add";
+    }
+
 
     @RequestMapping(value = "/admin/element/add", method = RequestMethod.POST)
     public String adminElementPost(ElementVO elementVO, Model model){

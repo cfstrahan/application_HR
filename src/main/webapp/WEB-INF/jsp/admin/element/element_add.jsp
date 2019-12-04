@@ -23,7 +23,7 @@
                 <fieldset>
                     <legend>Element Management</legend>
                     <div class="form-group">
-                        <label for="inputNewElementType" class="col-lg-2 control-label">Element Type</label>
+                        <label for="inputNewElementType" class="col-lg-2 control-label">Element</label>
                         <div class="col-lg-10">
                             <form:input path="newElementType" type="text" cssClass="form-control" id="inputNewElementType" placeholder="Element Type"></form:input>
                         </div>

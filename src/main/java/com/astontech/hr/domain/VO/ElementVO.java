@@ -12,7 +12,7 @@ public class ElementVO {
 
     public void splitNewElementsIntoArray(){
         //regex for splitting on a new line or carriage is "\\r?\\n"
-        this.setNewElementArray(this.newElements.split("\\r?\\n"));
+        this.setNewElementArray(this.getNewElements().split("\\r?\\n"));
     }
 
     public String getNewElementType() {
