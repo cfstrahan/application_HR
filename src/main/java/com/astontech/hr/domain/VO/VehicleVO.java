@@ -10,6 +10,10 @@ public class VehicleVO {
 
     public VehicleVO(){}
 
+    public void splitNewVehicleModelsIntoArray(){
+        //regex for splitting on a new line or carriage is "\\r?\\n"
+        this.setNewVehicleModelArray(this.getNewVehicleModels().split("\\r?\\n"));
+    }
 
     public String getNewVehicleMake() {
         return newVehicleMake;
